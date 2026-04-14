@@ -3,3 +3,14 @@
 *.wav
 /venv/
 .env*
+
+# Python
+__pycache__/
+*.pyc
+
+# Large dataset (too big for GitHub)
+backend/DATASET/
+
+# Build artifacts
+lint_output.txt
+tsconfig.tsbuildinfo
