@@ -64,11 +64,16 @@ export default function Home() {
           {/* Real HTML Overlay Button to block and replace the baked Spline button */}
           <a 
             href="/login?mode=signup" 
-            className="absolute z-[100] left-[16%] bottom-[15%] w-[220px] h-[80px] cursor-pointer"
-            aria-label="Join Us Now"
-            title="Join Us Now"
+            className="absolute z-50 left-[16.8%] bottom-[16%]"
           >
-            {/* Invisible hit overlay */}
+            <motion.button 
+              type="button"
+              whileHover={{ scale: 1.05, backgroundColor: "#064642" }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-[#022a26] text-white px-[24px] py-[20px] rounded-[14px] font-bold text-[15px] tracking-widest shadow-[0_6px_25px_rgba(0,0,0,0.7)] border border-[#14B8A6]/20 flex items-center justify-center min-w-[170px] min-h-[64px]"
+            >
+              JOIN US NOW
+            </motion.button>
           </a>
 
           {/* Watermark Cover Block */}
